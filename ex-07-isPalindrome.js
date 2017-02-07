@@ -10,7 +10,19 @@
 */
 
 var isPalindrome = function (string){
-  
+
+  var trueFalse = false
+  var turnItAround = ''
+
+  for(var i = string.length-1; i>=0; i=i-1){
+    turnItAround = turnItAround + string[i]
+  }if (string === turnItAround) {
+    //return true
+    trueFalse = true
+  }//else {
+    //return trueFalse
+  //}
+  return trueFalse
 }
 
 

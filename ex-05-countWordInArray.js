@@ -9,17 +9,14 @@
 **/
 
 var countWordInArray = function (inputStr, wordArray){
+  var wordNums = 0
 
   for( var i = 0; i < wordArray.length; i = i + 1 ){
-
-    var newNum = 1;
-
-    if (inputStr + wordArray[i] === 3) {
-      return 3
-    }else {
-      return newNum
+    if (wordArray[i] === inputStr){
+      wordNums = wordNums + 1
     }
   }
+  return wordNums
 }
 
 
